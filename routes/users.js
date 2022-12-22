@@ -22,8 +22,20 @@ router.put("/:id", async (req, res) => {
     } else {
         return res.status(403).json("You do not have permission.");
     }
-})
+});
 //Delete User
+router.delete("/:id", async (req, res) => {
+    if (req.body.userId === req.params.id || req.body.isAdmin) {
+        try {
+            const user = await User.findByIdAndDelete(req.params.id);
+            res.status(200).json("Account has been deleted successfully.")
+        } catch (err) {
+            return res.status(500).json(err);
+        }
+    } else {
+        res.status(403).json("You do not have permission.");
+    }
+});
 //Get a User
 //Follow User
 //Unfollow User

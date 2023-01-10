@@ -1,2 +1,2 @@
 # socialmediaApp
-Social Media App using MERN stack
+Social Media App Backend API using NodeJS and MongoDB

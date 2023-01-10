@@ -1,5 +1,5 @@
 # socialmediaApp
-Social Media App Backend API using NodeJS and MongoDB.
+**Social Media App Backend API using NodeJS and MongoDB.**
 
 This is just the Backend REST-API. Simply clone the project and "npm run".
 
